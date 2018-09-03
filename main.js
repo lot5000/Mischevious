@@ -7,4 +7,15 @@ setUpMedia();
 run("personalityutils.js");
 DMessage("Setting up personality");
 setUpVars();
-run("Structure" + java.io.File.separator + "MischeviousStructure.js");
+
+//Setup additional variables by lot5000
+run("lot5000variables.js");
+
+run("Assistant/Assistant.js");
+updatePictureSet();
+run("Assistant/AssistantLobby.js");
+
+CMessage("Lobby ended");
+
+
+//run("Structure" + java.io.File.separator + "MischeviousStructure.js");
